@@ -208,20 +208,19 @@ body {
 }
 
 .page {
-    width: 100vw;
-    height: auto;
-    display: table-cell;
-    position: relative;
-    z-index: 1;
-    padding: 0vw 0;
+    z-index: 2;
 }
 
 .dark-page {
+    background-color: var(--colour-3);
+    z-index: 1;
+}
+
+.section {
     width: 100vw;
     height: auto;
     display: table-cell;
     position: relative;
-    background-color: var(--colour-3);
     padding: 0vw 0;
 }
 
@@ -408,7 +407,7 @@ u {
 }
 
 .article-img-cov-toggle {
-    order: 1;
+    order: inherit;
     width: 80vw;
     height: 25vw;
     box-shadow: 0 1vw 0.5vw rgba(0,0,0,0);
@@ -472,7 +471,7 @@ u {
 }
 
 .article-content-wrapper-toggle {
-    order: 2;
+    order: inherit;
     padding: 3vw 3vw;
     width: 80vw;
     height: auto;
@@ -500,6 +499,14 @@ u {
     color: var(--colour-4);
     text-align: left;
     text-indent: 1em;
+}
+
+.art-left {
+    order: 1;
+}
+
+.art-right {
+    order: 2;
 }
 
 /* Footer */
@@ -686,22 +693,19 @@ body {
 }
 
 .page {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
-    padding: 0vw 0;
+    z-index: 2;
 }
 
 .dark-page {
+    background-color: var(--colour-3);
+    z-index: 1;
+}
+
+.section {
     width: 100vw;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: table-cell;
     position: relative;
-    background-color: var(--colour-3);
     padding: 0vw 0;
 }
 
@@ -962,10 +966,11 @@ u {
     display: flex;
     flex-direction: column;
     padding-top: 1em;
+    overflow-y: hidden;
 }
 
 .art-cont-container-toggle {
-    display: none;
+    display: inherit;
 }
 
 .art-para {
@@ -1167,22 +1172,19 @@ body {
 }
 
 .page {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
-    padding: 0vw 0;
+    z-index: 2;
 }
 
 .dark-page {
+    background-color: var(--colour-3);
+    z-index: 1;
+}
+
+.section {
     width: 100vw;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: table-cell;
     position: relative;
-    background-color: var(--colour-3);
     padding: 0vw 0;
 }
 
@@ -1447,10 +1449,11 @@ u {
     display: flex;
     flex-direction: column;
     padding-top: 1em;
+    overflow-y: hidden;
 }
 
 .art-cont-container-toggle {
-    display: none;
+    display: inherit;
 }
 
 .art-para {
