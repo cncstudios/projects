@@ -40,6 +40,25 @@ $(document).ready(function (){
         $(event.target).closest("div.article-img-cov").removeClass("article-img-cov-hover");
     });
 
+    // Background Colour Control //
+    $( "div.section:even" ).addClass('page');
+    $( "div.section:odd" ).addClass('dark-page');
+    $( "div.section:odd" ).append( "<div class='top-tri'></div> , <div class='bottom-tri'></div>" );
+    $( "div.section:even" ).children("div.article-flow").children("div.article-wrapper").children("div.article-img-cov").children("div.art-cov-tint").children("div.date").addClass('date-container');
+    $( "div.section:odd" ).children("div.article-flow").children("div.article-wrapper").children("div.article-img-cov").children("div.art-cov-tint").children("div.date").addClass('date-container-alt');
+
+    // Mobile Control //
+    if (($(window).width())/($(window).height()) > 40/31) {
+        console.log('desktop mode');
+        $( "div.section:even" ).children("div.article-flow").children("div.article-wrapper").children("div.article-img-cov").addClass('art-left');
+        $( "div.section:even" ).children("div.article-flow").children("div.article-wrapper").children("div.article-content-wrapper").addClass('art-right');
+        $( "div.section:odd" ).children("div.article-flow").children("div.article-wrapper").children("div.article-content-wrapper").addClass('art-left');
+        $( "div.section:odd" ).children("div.article-flow").children("div.article-wrapper").children("div.article-img-cov").addClass('art-right');
+    }
+    else {
+        console.log('mobile mode');
+    }
+        
     // Animated Arrow //
     (function($) {
     $.fn.seqfx = function() {
