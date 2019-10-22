@@ -1,18 +1,18 @@
     <!-- PAGE -->
-    <div class="page section">
+    <div class="section">
         <!-- Article -->
         <div class="article-flow">
             <div class="article-wrapper">
-                <!-- Left Art -->
+                <!-- Article Image -->
                 <div class="art-div article-img-cov" style="background-image: url(assets/img/projects/)">
                     <div class="art-cov-tint art-target" onClick="window.location='#'">
-                        <div class="date-container">
+                        <div class="date">
                             00 mon 00
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Art -->
+                <!-- Article Label -->
                 <div class="art-div article-content-wrapper">
                     <!-- Title -->
                     <div class="art-cont-title-container">
@@ -21,41 +21,6 @@
                     <!-- Article Content -->
                     <div class="art-cont-container art-cont-container-toggle">
                         <p class="art-para">[Info]</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <!-- PAGE DARK -->
-    <div class="dark-page section">
-        <!-- Design -->
-        <div class="top-tri"></div>
-        <div class="bottom-tri"></div>
-
-        <!-- Article -->
-        <div class="article-flow">
-            <div class="article-wrapper">
-                <!-- Left Art -->
-                <div class="art-div article-content-wrapper">
-                    <!-- Title -->
-                    <div class="art-cont-title-container">
-                        <h3>[Project Title]</h3>
-                    </div>
-                    <!-- Article Content -->
-                    <div class="art-cont-container art-cont-container-toggle">
-                        <p class="art-para">[Info]</p>
-                    </div>
-                </div>
-
-                <!-- Right Art -->
-                <div class="art-div article-img-cov" style="background-image: url(assets/img/projects/)">
-                    <div class="art-cov-tint art-target" onClick="window.location='#'">
-                        <div class="date-container-alt">
-                            00 mon 00
-                        </div>
                     </div>
                 </div>
 
