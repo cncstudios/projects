@@ -43,7 +43,7 @@ $(document).ready(function (){
     // Background Colour Control //
     $( "div.section:even" ).addClass('page');
     $( "div.section:odd" ).addClass('dark-page');
-    $( "div.section:odd" ).append( "<div class='top-tri'></div> , <div class='bottom-tri'></div>" );
+    $( "div.section:odd" ).append( "<div class='top-tri'></div><div class='bottom-tri'></div>" );
     $( "div.section:even" ).children("div.article-flow").children("div.article-wrapper").children("div.article-img-cov").children("div.art-cov-tint").children("div.date").addClass('date-container');
     $( "div.section:odd" ).children("div.article-flow").children("div.article-wrapper").children("div.article-img-cov").children("div.art-cov-tint").children("div.date").addClass('date-container-alt');
 
